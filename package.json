@@ -1,0 +1,12 @@
+{
+  "name": "glue-cli",
+  "version": "0.1.0",
+  "description": "Fix npm packages",
+  "main": "cli.js",
+  "repository": "git@github.com:bntzio/glue.js.git",
+  "author": "Enrique Benitez <hello@bntz.io>",
+  "license": "MIT",
+  "bin": {
+    "glue": "cli.js"
+  }
+}
