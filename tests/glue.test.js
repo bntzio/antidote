@@ -4,7 +4,7 @@ const { exec } = require('shelljs')
 
 const glue = require('./../lib')
 
-describe('glue', () => {
+describe('✨ glue', () => {
   before(function () {
     this.timeout(0)
     const removePkgString = 'yarn remove pokemon'
@@ -19,5 +19,13 @@ describe('glue', () => {
       .catch(error => console.log(error))
     const pokemon = require('pokemon')
     expect(pokemon.all().length).to.equal(10)
+  })
+
+  it('should always return Mewtwo', async () => {
+    await glue('pokemon')
+      .then(result => console.log(result))
+      .catch(error => console.log(error))
+    const pokemon = require('pokemon')
+    expect(pokemon.random()).to.equal('Mewtwo')
   })
 })
