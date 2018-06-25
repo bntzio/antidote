@@ -5,7 +5,7 @@ const shell = require('shelljs')
 describe('pokemon', () => {
   before(function () {
     this.timeout(0)
-    shell.exec('yarn add pokemon -D && yarn remove pokemon && yarn add pokemon -D')
+    shell.exec('yarn add pokemon -D && yarn remove pokemon && yarn add pokemon -D', { silent: true })
   })
 
   it('should return all pokemons', () => {
