@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@freebroccolo/shelljs-promises@^0.0.0":
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/@freebroccolo/shelljs-promises/-/shelljs-promises-0.0.0.tgz#dc8d81ddb422eb104272b7170891be7b846cf4d3"
+  dependencies:
+    shelljs "^0.7.0"
+
 acorn-jsx@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-3.0.1.tgz#afdf9488fb1ecefc8348f6fb22f464e32a58b36b"
@@ -1133,6 +1139,14 @@ shebang-command@^1.2.0:
 shebang-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
+
+shelljs@^0.7.0:
+  version "0.7.8"
+  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.7.8.tgz#decbcf874b0d1e5fb72e14b164a9683048e9acb3"
+  dependencies:
+    glob "^7.0.0"
+    interpret "^1.0.0"
+    rechoir "^0.6.2"
 
 shelljs@^0.8.2:
   version "0.8.2"

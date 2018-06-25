@@ -7,7 +7,8 @@
   "author": "Enrique Benitez <hello@bntz.io>",
   "license": "MIT",
   "scripts": {
-    "test:pokemon": "mocha tests/pokemon.test.js"
+    "test:pokemon": "mocha tests/pokemon.test.js",
+    "test:glue": "mocha tests/glue.test.js"
   },
   "bin": {
     "glue": "cli.js"
@@ -19,6 +20,7 @@
     "standard": "^11.0.1"
   },
   "dependencies": {
+    "@freebroccolo/shelljs-promises": "^0.0.0",
     "shelljs": "^0.8.2"
   }
 }
