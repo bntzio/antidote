@@ -7,14 +7,17 @@
   "author": "Enrique Benitez <hello@bntz.io>",
   "license": "MIT",
   "scripts": {
-    "test": "mocha tests/index.test.js -w"
+    "test:pokemon": "mocha tests/pokemon.test.js"
   },
   "bin": {
     "glue": "cli.js"
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "pokemon": "^1.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "shelljs": "^0.8.2"
+  }
 }
