@@ -20,4 +20,13 @@ describe('⚡ pokemon', () => {
     const pokemon = require('pokemon')
     expect(pokemon.getName(25)).to.equal('Pikachu')
   })
+
+  it('should throw error message if invalid id', () => {
+    const pokemon = require('pokemon')
+    const id = 999
+    const repoUrl = 'https://github.com/sindresorhus/pokemon'
+    const reportText = `Please report to ${repoUrl}/issues if we missed something.`
+    const errorMsg = `Pokémon with ID '${id}' does not exist. ${reportText}`
+    expect(() => pokemon.getName(id)).to.throw(errorMsg)
+  })
 })

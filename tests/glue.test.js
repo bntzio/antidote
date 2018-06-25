@@ -28,4 +28,11 @@ describe('✨ glue', () => {
     const pokemon = require('pokemon')
     expect(pokemon.random()).to.equal('Mewtwo')
   })
+
+  it('should throw fixed error message if invalid id', () => {
+    const pokemon = require('pokemon')
+    const id = 999
+    const errorMsg = `Damn! Pokémon with ID '${id}' does not exist!!!!`
+    expect(() => pokemon.getName(id)).to.throw(errorMsg)
+  })
 })
