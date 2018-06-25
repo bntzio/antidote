@@ -6,7 +6,15 @@
   "repository": "git@github.com:gluejs/glue.js.git",
   "author": "Enrique Benitez <hello@bntz.io>",
   "license": "MIT",
+  "scripts": {
+    "test": "mocha tests/index.test.js -w"
+  },
   "bin": {
     "glue": "cli.js"
-  }
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {}
 }
