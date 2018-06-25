@@ -1,11 +1,14 @@
 /* eslint-env mocha */
 const expect = require('chai').expect
-const shell = require('shelljs')
+const { exec } = require('shelljs')
 
 describe('pokemon', () => {
   before(function () {
     this.timeout(0)
-    shell.exec('yarn add pokemon -D && yarn remove pokemon && yarn add pokemon -D', { silent: true })
+    const removePkgString = 'yarn remove pokemon'
+    const addPkgString = 'yarn add -D pokemon'
+    const opts = { silent: true }
+    exec(`${addPkgString} && ${removePkgString} && ${addPkgString}`, opts)
   })
 
   it('should return all pokemons', () => {
