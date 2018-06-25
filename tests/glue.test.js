@@ -12,9 +12,9 @@ describe('glue', () => {
 
   it('should return 10 pokemons instead of all pokemons', async () => {
     await glue('pokemon').then(result => {
-      console.log('✨ Done! ', result)
+      console.log(result)
     }).catch(error => {
-      console.log('🔥 Error: ', error)
+      console.log(error)
     })
     const pokemon = require('pokemon')
     expect(pokemon.all().length).to.equal(10)
