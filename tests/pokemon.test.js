@@ -1,3 +1,4 @@
+/* eslint-env mocha */
 const expect = require('chai').expect
 const shell = require('shelljs')
 

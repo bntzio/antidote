@@ -15,7 +15,8 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
-    "pokemon": "^1.2.2"
+    "pokemon": "^1.2.2",
+    "standard": "^11.0.1"
   },
   "dependencies": {
     "shelljs": "^0.8.2"
