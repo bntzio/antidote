@@ -1,6 +1,6 @@
 {
   "name": "antidote",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A magic potion that cures unmaintained libraries",
   "main": "cli.js",
   "repository": "git@github.com:bntzio/antidote.git",
