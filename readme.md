@@ -1,3 +1,3 @@
-# Glue.js
+# Antidote 🧪
 
-> Fix npm packages
+> A magic potion that cures unmaintained libraries

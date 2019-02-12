@@ -1,15 +1,15 @@
 {
-  "name": "@gluejs/glue",
+  "name": "antidote",
   "version": "0.1.0",
-  "description": "Fix npm packages the easy way",
+  "description": "A magic potion that cures unmaintained libraries",
   "main": "cli.js",
-  "repository": "git@github.com:gluejs/glue.js.git",
+  "repository": "git@github.com:bntzio/antidote.git",
   "author": "Enrique Benitez <hello@bntz.io>",
   "license": "MIT",
   "scripts": {
     "test:pokemon": "mocha tests/pokemon.test.js",
-    "test:glue": "mocha tests/glue.test.js",
-    "test": "yarn test:pokemon && yarn test:glue"
+    "test:antidote": "mocha tests/antidote.test.js",
+    "test": "yarn test:pokemon && yarn test:antidote"
   },
   "husky": {
     "hooks": {
@@ -17,13 +17,13 @@
     }
   },
   "bin": {
-    "glue": "cli.js"
+    "antidote": "cli.js"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "husky": "next",
     "mocha": "^5.2.0",
-    "pokemon": "^1.2.2",
+    "pokemon": "^1.2.3",
     "standard": "^11.0.1"
   },
   "dependencies": {

@@ -1,5 +1,5 @@
 #! /usr/bin/env node
-console.log('Applying glue...')
+console.log('Applying antidote... 🧪')
 setTimeout(() => {
   console.log('Done! 💖')
 }, 2000)
